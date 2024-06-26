@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom right,rgb(247, 217, 217), rgb(255, 103, 103));
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-top: 1.8rem;
+}
+
+.grid{
+    position: relative;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,19vh);
+    gap: 2.4rem;
+    justify-content: center;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.color-box{
+    /* z-index: 5; */
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom left,rgb(255, 89, 89),rgb(255, 13, 13));
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.color-box:hover{
+    /* transform: translateY(-2%); */
+    transform: scale(1.05);
+}
+
+.hidden{
+    display: none;
+}
+
+.header{
+    height: 10vh;
+    padding: 1.2rem;
+}
+
+.score-box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.score-text,.highscore-text,.attempts-box{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: rgb(240, 100, 100);
+}
+
+.score,.highscore,.attempts{
+    font-size: 6rem;
+    font-weight: 500;
+    color: rgb(236, 39, 39);
+}
+
+.ee{
+    font-size: 6rem;
+    font-weight: 500;
+    color: rgb(236, 39, 39);
+}
+
+.after-end{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    background-image: linear-gradient(to bottom right,rgb(84, 197, 141),rgb(18, 216, 100));
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    opacity: 0.95;
+    
+    
+}
+
+.play-again{
+    border: none;
+    font-size: 6rem;
+    border-radius: 12px;
+    padding: 1.2rem 2.4rem;
+    color: rgb(185, 190, 196);
+    background-image: linear-gradient(to bottom right, rgb(175, 78, 78),rgb(204, 50, 50));
+    transition: all 0.3s;
+}
+
+.play-again:hover{
+    cursor: pointer;
+    box-shadow: 0 20px 32px 10px rgba(0,0,0,0.2);
+}
